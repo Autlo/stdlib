@@ -1,0 +1,29 @@
+{
+  "name": "autlo-stdlib",
+  "description": "Library containing standard functions used by Autlo.",
+  "version": "0.0.1",
+  "author": "Rain Ramm <rain@autlo.com>",
+  "license": "MIT",
+  "repository": "autlo/stdlib",
+  "homepage": "http://autlo.com",
+  "dependencies": {
+    "buffer-crc32": "^0.2.5"
+  },
+  "devDependencies": {
+    "istanbul": "^0.4.2",
+    "mocha": "2.3.4"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "files": [
+    "LICENSE",
+    "readme.md",
+    "index.js",
+    "src/"
+  ],
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks test/",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "autlo-stdlib",
   "description": "Library containing standard functions used by Autlo.",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Rain Ramm <rain@autlo.com>",
   "license": "MIT",
   "repository": "autlo/stdlib",

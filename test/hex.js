@@ -13,6 +13,7 @@ describe('Hex', function () {
 
     describe('#toSignedDec', function () {
         it('Should return signed decimal number', function () {
+            assert.strictEqual(hex.toSignedDec('01'), 1);
             assert.strictEqual(hex.toSignedDec('FFFF'), -1);
             assert.strictEqual(hex.toSignedDec('FFF4'), -12);
         });

@@ -24,7 +24,8 @@
   ],
   "scripts": {
     "test": "mocha --reporter spec --bail --check-leaks test/",
-    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "math",

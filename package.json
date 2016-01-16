@@ -1,7 +1,7 @@
 {
   "name": "autlo-stdlib",
   "description": "Library containing standard functions used by Autlo.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Rain Ramm <rain@autlo.com>",
   "license": "MIT",
   "repository": "autlo/stdlib",
@@ -27,7 +27,18 @@
     "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
   },
   "keywords": [
-    "math", "round", "stdlib", "autlo", "filesystem", "fs", "walk", "hex", "hex2int", "hex2str", "int2hex", "crc",
+    "math",
+    "round",
+    "stdlib",
+    "autlo",
+    "filesystem",
+    "fs",
+    "walk",
+    "hex",
+    "hex2int",
+    "hex2str",
+    "int2hex",
+    "crc",
     "crc32"
   ]
 }

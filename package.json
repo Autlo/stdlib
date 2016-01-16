@@ -7,10 +7,10 @@
   "repository": "autlo/stdlib",
   "homepage": "http://autlo.com",
   "dependencies": {
-    "buffer-crc32": "^0.2.5"
+    "buffer-crc32": "0.2.5"
   },
   "devDependencies": {
-    "istanbul": "^0.4.2",
+    "istanbul": "0.4.2",
     "mocha": "2.3.4"
   },
   "engines": {
@@ -25,5 +25,9 @@
   "scripts": {
     "test": "mocha --reporter spec --bail --check-leaks test/",
     "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
-  }
+  },
+  "keywords": [
+    "math", "round", "stdlib", "autlo", "filesystem", "fs", "walk", "hex", "hex2int", "hex2str", "int2hex", "crc",
+    "crc32"
+  ]
 }

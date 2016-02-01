@@ -25,4 +25,24 @@ describe('Filesystem', function () {
             fs.rmdirSync('tmp');
         });
     });
+
+    describe('#removeDirectoryContents', function () {
+        it('Should remove all files and folders from directory', function () {
+            fs.mkdirSync('tmp');
+            fs.mkdirSync('tmp/test1');
+            fs.mkdirSync('tmp/test2');
+            fs.writeFileSync('tmp/test1/file.js', '');
+            fs.writeFileSync('tmp/test2/file.js', '');
+
+            filesystem.removeDirectoryContents('tmp/test1', function() {
+                assert.deepEqual(fs.readdirSync('tmp/test1').length, 0);
+
+                filesystem.removeDirectoryContents('tmp/', function() {
+                    assert.deepEqual(fs.readdirSync('tmp').length, 0);
+
+                    fs.rmdirSync('tmp');
+                });
+            });
+        });
+    });
 });

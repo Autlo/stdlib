@@ -6,8 +6,8 @@ var exec = require('child_process').exec;
 /**
  * Asyncronous function to remove all files and (including non-empty) directories from path
  *
- * @param path
- * @param callback(err)
+ * @param {String} path
+ * @param {Function} callback(err)
  */
 module.exports.removeDirectoryContents = function (path, callback)
 {
